@@ -18,8 +18,15 @@ This lab is an introduction to using Docker containers on Kubernetes in the IBM 
 * Add AI services to extend your app
 * Secure and monitor your cluster and app
 
-# Prerequisites
-* A Pay-As-You-Go or Subscription [IBM Cloud account](https://cloud.ibm.com/registration/)
+# Get set up
+
+Before we dive into Kubernetes, you need to provision a cluster for your containerized app. Then you won't have to wait for it to be ready for the subsequent labs.
+
+1. Go to [this link](https://cognitiveclass.ai/ibm-cloud-promotion/) and follow the instructions to sign up with Cognitive Class and IBM Cloud and apply the promo code
+1. Go to https://cloud.ibm.com/kubernetes/catalog/cluster/create and create a free Kubernetes cluster in Asia Pacific - Sydney.
+1. Install the CLIs per https://cloud.ibm.com/docs/containers/cs_cli_install.html. If you do not yet have these CLIs and the Kubernetes CLI, do [lab 0](https://github.com/IBM/container-service-getting-started-wt/tree/master/Lab%200) before starting the course.
+1. After creation, before using the cluster, make sure it has completed provisioning and is ready for use. Run `ibmcloud ks clusters` and make sure that your cluster is in state "deployed".
+1. Then use `ibmcloud ks workers <name-of-cluster>` and make sure that all worker nodes are in state "normal" with Status "Ready".
 
 # Virtual machines
 
@@ -47,16 +54,6 @@ Traditional applications are run on native hardware. A single application does n
 ![Containers versus VMs](images/VMvsContainer.png)
 
 Containers allow you to share the host OS. This reduces duplication while still providing the isolation. Containers also allow you to drop unneeded files such as system libraries and binaries to save space and reduce your attack surface. If SSHD or LIBC are not installed, they cannot be exploited.
-
-# Get set up
-
-Before we dive into Kubernetes, you need to provision a cluster for your containerized app. Then you won't have to wait for it to be ready for the subsequent labs.
-
-1. Go to [this link](https://cognitiveclass.ai/ibm-cloud-promotion/) and follow the instructions to sign up with Cognitive Class and IBM Cloud and apply the promo code
-1. You must install the CLIs per https://cloud.ibm.com/docs/containers/cs_cli_install.html. If you do not yet have these CLIs and the Kubernetes CLI, do [lab 0](https://github.com/IBM/container-service-getting-started-wt/tree/master/Lab%200) before starting the course.
-1. If you haven't already, provision a cluster. This can take a few minutes, so let it start first: `ibmcloud ks cluster-create --name <name-of-cluster>`
-1. After creation, before using the cluster, make sure it has completed provisioning and is ready for use. Run `ibmcloud ks clusters` and make sure that your cluster is in state "deployed".
-1. Then use `ibmcloud ks workers <name-of-cluster>` and make sure that all worker nodes are in state "normal" with Status "Ready".
 
 # Kubernetes and containers: an overview
 
@@ -159,7 +156,7 @@ IBM Cloud provides the capability to run applications in containers on Kubernete
 * Capability to manage dedicated cluster resources for both stateless applications and stateful workloads
 
 
-#  Lab overview
+# Lab overview
 
 [Lab 0](https://github.com/IBM/container-service-getting-started-wt/tree/master/Lab%200) (Optional): Provides a walkthrough for installing IBM Cloud command-line tools and the Kubernetes CLI. You can skip this lab if you have the IBM Cloud CLI, the container-service plugin, the containers-registry plugin, and the kubectl CLI already installed on your machine.
 
@@ -171,5 +168,16 @@ IBM Cloud provides the capability to run applications in containers on Kubernete
 
 [Lab 4](https://github.com/IBM/container-service-getting-started-wt/tree/master/Lab%204) (Under Construction, Paid Only, Optional): This lab will outline how to create a highly available application, and build on the knowledge you have learned in Labs 1 - 3 to deploy clusters simultaneously to multiple availability zones. As this requires a paid IBM Cloud account, skip this lab if you are sticking to the free tier.
 
-[Lab 5](https://github.com/IBM/container-service-getting-started-wt/tree/master/Lab%205): This lab walks through securing your cluster and applications using network policies, and will later add leveraging tools like Vulnerability Advisor to secure images and manage security in your image registry.
+[Lab 5](https://github.com/IBM/container-service-getting-started-wt/tree/master/Lab%205) (Optional): This lab walks through securing your cluster and applications using network policies, and will later add leveraging tools like Vulnerability Advisor to secure images and manage security in your image registry.
 
+# Start here
+
+1. Enroll and start the Container & Kubernetes Essentials with IBM Cloud class at [Cognitive Class](https://cognitiveclass.ai/courses/kubernetes-course/).
+1. Get your completion certificate and badge.
+
+# What's next
+
+Complete the rest of the courses on the Containers, microservices, Kubernetes, and Istio on the Cloud [learning path](https://cognitiveclass.ai/learn/containers-k8s-and-istio-on-ibm-cloud/):
+1. [Getting started with Microservices with Istio and IBM Cloud Kubernetes Service](https://cognitiveclass.ai/courses/get-started-with-microservices-istio-and-ibm-cloud-container-service/)
+1. [Beyond the Basics: Istio and IBM Cloud Kubernetes Service](https://cognitiveclass.ai/learn/containers-k8s-and-istio-on-ibm-cloud/)
+1. [Knative 101 workshop](https://github.com/IBM/knative101/tree/master/workshop)
