@@ -1,13 +1,8 @@
 <img src="https://kubernetes.io/images/favicon.png" width="200">
+
 # IBM Cloud Kubernetes Service lab
 
-# An introduction to containers
-
-Hey, are you looking for a containers 101 course? Check out our [Docker Essentials](https://cognitiveclass.ai/courses/docker-essentials/).
-
-Containers allow you to run securely isolated applications with quotas on system resources. Containers started out as an individual feature delivered with the linux kernel. Docker launched with making containers easy to use and developers quickly latched onto that idea. Containers have also sparked an interest in microservice architecture, a design pattern for developing applications in which complex applications are broken down into smaller, composable pieces which work together.
-
-Watch this [video](https://www.youtube.com/watch?v=wlBhtc31I8c) to learn about production uses of containers.
+Welcome to Code @ Think Summit Sydney 2019!
 
 # Objectives
 
@@ -18,11 +13,20 @@ This lab is an introduction to using Docker containers on Kubernetes in the IBM 
 * Add AI services to extend your app
 * Secure and monitor your cluster and app
 
+# Prerequisites
+
+You should have a basic understanding of Docker containers. If not, check out our [Docker Essentials](https://cognitiveclass.ai/courses/docker-essentials/).
+
+Containers allow you to run securely isolated applications with quotas on system resources. Containers started out as an individual feature delivered with the linux kernel. Docker launched with making containers easy to use and developers quickly latched onto that idea. Containers have also sparked an interest in microservice architecture, a design pattern for developing applications in which complex applications are broken down into smaller, composable pieces which work together.
+
+Watch this [video](https://www.youtube.com/watch?v=wlBhtc31I8c) to learn about production uses of containers.
+
 # Get set up
 
 Before we dive into Kubernetes, you need to provision a cluster for your containerized app. Then you won't have to wait for it to be ready for the subsequent labs.
 
-1. Go to [this link](https://cognitiveclass.ai/ibm-cloud-promotion/) and follow the instructions to sign up with Cognitive Class and IBM Cloud and apply the promo code
+1. Go to [this link](https://cognitiveclass.ai/ibm-cloud-promotion/) and follow the instructions to sign up with Cognitive Class and IBM Cloud and obtain the promo code
+1. Go to IBM Cloud [Account Settings](https://cloud.ibm.com/account/settings) and click "Apply Code" to apply code from previous step
 1. Go to https://cloud.ibm.com/kubernetes/catalog/cluster/create and create a free Kubernetes cluster in Asia Pacific - Sydney.
 1. Install the CLIs per https://cloud.ibm.com/docs/containers/cs_cli_install.html. If you do not yet have these CLIs and the Kubernetes CLI, do [lab 0](https://github.com/IBM/container-service-getting-started-wt/tree/master/Lab%200) before starting the course.
 1. After creation, before using the cluster, make sure it has completed provisioning and is ready for use. Run `ibmcloud ks clusters` and make sure that your cluster is in state "deployed".
@@ -172,12 +176,17 @@ IBM Cloud provides the capability to run applications in containers on Kubernete
 
 # Start here
 
-1. Enroll and start the Container & Kubernetes Essentials with IBM Cloud class at [Cognitive Class](https://cognitiveclass.ai/courses/kubernetes-course/).
-1. Get your completion certificate and badge.
+Enroll and start the Container & Kubernetes Essentials with IBM Cloud class at [Cognitive Class](https://cognitiveclass.ai/courses/kubernetes-course/).
+
+### Changes for Think Sydney
+1. Instead of using `registry.ng.bluemix.net` for IBM Cloud Container Registry, use `au.icr.io` which is the new hostname for the IBM Cloud Container Registry in Sydney.
+
+Get your completion certificate and badge.
+
 
 # What's next
 
 Complete the rest of the courses on the Containers, microservices, Kubernetes, and Istio on the Cloud [learning path](https://cognitiveclass.ai/learn/containers-k8s-and-istio-on-ibm-cloud/):
 1. [Getting started with Microservices with Istio and IBM Cloud Kubernetes Service](https://cognitiveclass.ai/courses/get-started-with-microservices-istio-and-ibm-cloud-container-service/)
-1. [Beyond the Basics: Istio and IBM Cloud Kubernetes Service](https://cognitiveclass.ai/learn/containers-k8s-and-istio-on-ibm-cloud/)
+1. [Beyond the Basics: Istio and IBM Cloud Kubernetes Service](https://cognitiveclass.ai/courses/beyond-the-basics-istio-and-ibm-cloud-kubernetes-service/)
 1. [Knative 101 workshop](https://github.com/IBM/knative101/tree/master/workshop)
