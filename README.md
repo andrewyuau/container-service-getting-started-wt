@@ -21,8 +21,6 @@ Containers allow you to run securely isolated applications with quotas on system
 
 Watch this [video](https://www.youtube.com/watch?v=wlBhtc31I8c) to learn about production uses of containers.
 
-# Get set up
-
 Before we dive into Kubernetes, you need to provision a cluster for your containerized app. Then you won't have to wait for it to be ready for the subsequent labs.
 
 1. Go to [this link](https://cognitiveclass.ai/ibm-cloud-promotion/) and follow the instructions to sign up with Cognitive Class and IBM Cloud and obtain the promo code
