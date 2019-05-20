@@ -176,11 +176,13 @@ IBM Cloud provides the capability to run applications in containers on Kubernete
 
 Enroll and start the Container & Kubernetes Essentials with IBM Cloud class at [Cognitive Class](https://cognitiveclass.ai/courses/kubernetes-course/).
 
+Get your completion certificate and badge!
+
 ### Changes for Think Sydney
 1. Instead of using `registry.ng.bluemix.net` for IBM Cloud Container Registry, use `au.icr.io` which is the new hostname for the IBM Cloud Container Registry in Sydney.
-
-Get your completion certificate and badge.
-
+1. Before Lab 3 of first course, run the following commands to create an org and space:
+   1. `ibmcloud account org-create <org_name>`
+   1. `ibmcloud account space-create <space_name>`
 
 # What's next
 
