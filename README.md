@@ -183,6 +183,7 @@ Get your completion certificate and badge!
 1. Before Lab 3 of first course, run the following commands to create an org and space:
    1. `ibmcloud account org-create <org_name>`
    1. `ibmcloud account space-create <space_name>`
+   1. Before step 3, go to [https://cloud.ibm.com/resource](https://cloud.ibm.com/resources). Under Services, click the ... icon and rename the service from Tone Analyzer-xx to ToneAnalyzer-xx. For command in step 3.1, use `ibmcloud cs cluster-service-bind <name-of-cluster> default <ToneAnalyzer-xx>`(replace xx with your instance name).
 
 # What's next
 
