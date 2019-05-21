@@ -185,6 +185,7 @@ Get your completion certificate and badge!
    1. `ibmcloud account org-create <org_name>`
    1. `ibmcloud account space-create <space_name>`
    1. Before step 3, go to [https://cloud.ibm.com/resource](https://cloud.ibm.com/resources). Under Services, click the ... icon and rename the service from Tone Analyzer-xx to tone.
+1. After finishing the first course and receiving the badge, send me an email (andrew at au.ibm.com) with a screenshot and I will grant you permissions and send you a kubeconfig file for an upgraded cluster for the next course.
 
 # What's next
 
