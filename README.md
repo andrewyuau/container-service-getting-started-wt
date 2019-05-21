@@ -2,7 +2,8 @@
 
 # IBM Cloud Kubernetes Service lab
 
-Welcome to Code @ Think Summit Sydney 2019!
+Welcome to Code @ Think Summit Sydney 2019! Short link to this page: [http://ibm.biz/k8sCodeLab](http://ibm.biz/k8sCodeLab
+).
 
 # Objectives
 
