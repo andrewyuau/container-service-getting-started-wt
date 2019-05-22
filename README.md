@@ -31,6 +31,27 @@ Before we dive into Kubernetes, you need to provision a cluster for your contain
 1. After creation, before using the cluster, make sure it has completed provisioning and is ready for use. Run `ibmcloud ks clusters` and make sure that your cluster is in state "deployed".
 1. Then use `ibmcloud ks workers <name-of-cluster>` and make sure that all worker nodes are in state "normal" with Status "Ready".
 
+# Start here
+
+Enroll and start the Container & Kubernetes Essentials with IBM Cloud class at [Cognitive Class](https://cognitiveclass.ai/courses/kubernetes-course/).
+
+Get your completion certificate and badge!
+
+### Changes for Think Sydney
+1. Instead of using `registry.ng.bluemix.net` for IBM Cloud Container Registry, use `au.icr.io` which is the new hostname for the IBM Cloud Container Registry in Sydney.
+1. Before Lab 3 of first course, run the following commands to create an org and space:
+   1. `ibmcloud account org-create <org_name>`
+   1. `ibmcloud account space-create <space_name>`
+   1. Before step 3, go to [https://cloud.ibm.com/resource](https://cloud.ibm.com/resources). Under Services, click the ... icon and rename the service from Tone Analyzer-xx to tone.
+1. After finishing the first course and receiving the badge, send me an email (andrewyu at au.ibm.com) with a screenshot and your IBM Cloud account email address. I will grant you permissions for an upgraded cluster for the Istio and Knative courses.
+
+# What's next
+
+Complete the rest of the courses on the Containers, microservices, Kubernetes, and Istio on the Cloud [learning path](https://cognitiveclass.ai/learn/containers-k8s-and-istio-on-ibm-cloud/):
+1. [Getting started with Microservices with Istio and IBM Cloud Kubernetes Service](https://cognitiveclass.ai/courses/get-started-with-microservices-istio-and-ibm-cloud-container-service/)
+1. [Beyond the Basics: Istio and IBM Cloud Kubernetes Service](https://cognitiveclass.ai/courses/beyond-the-basics-istio-and-ibm-cloud-kubernetes-service/)
+1. [Knative 101 workshop](https://github.com/IBM/knative101/tree/master/workshop)
+
 # Virtual machines
 
 Prior to containers, most infrastructure ran not on bare metal, but atop hypervisors managing multiple virtualized operating systems (OSes). This arrangement allowed isolation of applications from one another on a higher level than that provided by the OS. These virtualized operating systems see what looks like their own exclusive hardware. However, this also means that each of these virtual operating systems are replicating an entire OS, taking up disk space.
@@ -159,37 +180,3 @@ IBM Cloud provides the capability to run applications in containers on Kubernete
 * Capability to manage dedicated cluster resources for both stateless applications and stateful workloads
 
 
-# Lab overview
-
-[Lab 0](https://github.com/IBM/container-service-getting-started-wt/tree/master/Lab%200) (Optional): Provides a walkthrough for installing IBM Cloud command-line tools and the Kubernetes CLI. You can skip this lab if you have the IBM Cloud CLI, the container-service plugin, the containers-registry plugin, and the kubectl CLI already installed on your machine.
-
-[Lab 1](https://github.com/IBM/container-service-getting-started-wt/tree/master/Lab%201): This lab walks through creating and deploying a simple "hello world" app in Node.JS, then accessing that app.
-
-[Lab 2](https://github.com/IBM/container-service-getting-started-wt/tree/master/Lab%202): Builds on lab 1 to expand to a more resilient setup which can survive having containers fail and recover. Lab 2 will also walk through basic services you need to get started with Kubernetes and the IBM Cloud Kubernetes Service
-
-[Lab 3](https://github.com/IBM/container-service-getting-started-wt/tree/master/Lab%203): This lab covers adding external services to a cluster. It walks through adding integration to a Watson service, and discusses storing credentials of external services to the cluster.
-
-[Lab 4](https://github.com/IBM/container-service-getting-started-wt/tree/master/Lab%204) (Under Construction, Paid Only, Optional): This lab will outline how to create a highly available application, and build on the knowledge you have learned in Labs 1 - 3 to deploy clusters simultaneously to multiple availability zones. As this requires a paid IBM Cloud account, skip this lab if you are sticking to the free tier.
-
-[Lab 5](https://github.com/IBM/container-service-getting-started-wt/tree/master/Lab%205) (Optional): This lab walks through securing your cluster and applications using network policies, and will later add leveraging tools like Vulnerability Advisor to secure images and manage security in your image registry.
-
-# Start here
-
-Enroll and start the Container & Kubernetes Essentials with IBM Cloud class at [Cognitive Class](https://cognitiveclass.ai/courses/kubernetes-course/).
-
-Get your completion certificate and badge!
-
-### Changes for Think Sydney
-1. Instead of using `registry.ng.bluemix.net` for IBM Cloud Container Registry, use `au.icr.io` which is the new hostname for the IBM Cloud Container Registry in Sydney.
-1. Before Lab 3 of first course, run the following commands to create an org and space:
-   1. `ibmcloud account org-create <org_name>`
-   1. `ibmcloud account space-create <space_name>`
-   1. Before step 3, go to [https://cloud.ibm.com/resource](https://cloud.ibm.com/resources). Under Services, click the ... icon and rename the service from Tone Analyzer-xx to tone.
-1. After finishing the first course and receiving the badge, send me an email (andrewyu at au.ibm.com) with a screenshot and your IBM Cloud account email address. I will grant you permissions for an upgraded cluster for the Istio and Knative courses.
-
-# What's next
-
-Complete the rest of the courses on the Containers, microservices, Kubernetes, and Istio on the Cloud [learning path](https://cognitiveclass.ai/learn/containers-k8s-and-istio-on-ibm-cloud/):
-1. [Getting started with Microservices with Istio and IBM Cloud Kubernetes Service](https://cognitiveclass.ai/courses/get-started-with-microservices-istio-and-ibm-cloud-container-service/)
-1. [Beyond the Basics: Istio and IBM Cloud Kubernetes Service](https://cognitiveclass.ai/courses/beyond-the-basics-istio-and-ibm-cloud-kubernetes-service/)
-1. [Knative 101 workshop](https://github.com/IBM/knative101/tree/master/workshop)
